@@ -4,5 +4,5 @@
 
 # conceive
 
-![Terraform output for CacheFly services](./docs/wireframe.pn)
+![Terraform output for CacheFly services](./docs/wireframe.png)
 
