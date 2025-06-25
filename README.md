@@ -1,38 +1,26 @@
-# sv
+# cdnbuddy (web)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+🤖 Your CDN buddy - Just converse with buddy and configure sophisticated CDN setups without needing to know technical configurations. Focus on your business while buddy makes your web blazingly fast!
 
-## Creating a project
+# example converstaion
+```
+You: "Hi, I have a video streaming app and my users in Europe are complaining it's really slow. Can you help?"
+    
+CDNBuddy: "Hey! Absolutely, I can help speed up your video streaming for European users. Let me check your current setup first.
+           I can see you don't have any CDN configured yet. For video streaming in Europe, I'd recommend setting up a CDN with strong European edge locations.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+          check the action plan I have created 😀
 ```
 
-## Developing
+# conceive
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![Terraform output for CacheFly services](./docs/wireframe.png)
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# core architecture
+```
+cdnbuddy-web (SvelteKit Frontend) ↔ WebSocket ↔ Go Backend Services + LLM ↔ CDN SDK
 ```
 
-## Building
+## License
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
